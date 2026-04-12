@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.carSection {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .mainBlock {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: 0 auto;
+
+        h2 {
+            width: 100%;
+            font-size: 24px;
+            font-weight: 500;
+
+            span {
+                color: #009661;
+            }
+        }
+
+        .searchContainer {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 6px;
+            padding: 4px 16px;
+            gap: 12px;
+
+            &:focus-within {
+                box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .searchIcon {
+                width: 24px;
+                height: 24px;
+            }
+
+            .searchInput {
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+
+            .addButton {
+                background: rgba(0, 150, 97, 0.1);
+                border: none;
+                border-radius: 6px;
+                padding: 10px 24px;
+                cursor: pointer;
+
+                p {
+                    font-size: 14px;
+                    background: linear-gradient(to bottom, rgb(40, 173, 136), rgb(35, 154, 121));
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+
+        .titleBlock {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .bodyType {
+                font-size: 14px;
+                color: #8b959e;
+            }
+
+            .carName {
+                font-size: 18px;
+                font-weight: 600;
+                color: #252525;
+            }
+        }
+
+        .carBlock {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+
+            .card {
+                background: #fff;
+                border-radius: 12px;
+                min-height: 464px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                .cardInner {
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .specsList {
+                        width: 85%;
+                        display: flex;
+                        justify-content: space-between;
+                        li {
+                            width: 30%;
+                            height: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgba($color: #8b959e, $alpha: 0.05);
+                            font-size: 12px;
+                            border-radius: 4px;
+                        }
+                    }
+
+                    .footer {
+                        border-top: 2px solid #e8e9e8;
+                        height: 90px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+
+                        .sellerInfo {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: absolute;
+                            opacity: 1;
+                            transition: opacity 0.3s ease;
+                            z-index: 1;
+
+                            .locationIcon {
+                                display: flex;
+                                gap: 10px;
+                            }
+
+                            .priceBlock {
+                                width: 120px;
+                                height: 40px;
+
+                                .price {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: white;
+
+                                    p {
+                                        font-size: 22px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+
+                        .actionsBtn {
+                            position: absolute;
+                            opacity: 0;
+                            transition: opacity 0.3s ease;
+                            z-index: 2;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+
+                            .editBtn {
+                                width: 50%;
+                                height: 48px;
+                                background-color: rgba($color: #009661, $alpha: 0.1);
+                                border: none;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #009661;
+                                cursor: pointer;
+                            }
+
+                            .deleteBtn {
+                                width: 50%;
+                                height: 48px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 8px;
+                                background-color: rgba($color: #eb5757, $alpha: 0.1);
+                                border: none;
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: #eb5757;
+                                cursor: pointer;
+                            }
+                        }
+
+                        &:hover {
+                            .sellerInfo {
+                                opacity: 0;
+                            }
+
+                            .actionsBtn {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .addAds {
+            width: 12vw;
+            height: 56px;
+            background: #009661;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}

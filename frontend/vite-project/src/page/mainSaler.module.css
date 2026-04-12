@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+* ul li {
+  list-style-type: none;
+}
+
+header {
+  width: 99vw;
+  height: 10vh;
+  display: flex;
+  background-color: #141416;
+}
+header .headerMain {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header .headerMain h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #FFFFFF;
+}
+header .headerMain h2 span {
+  color: #009661;
+}
+header .headerMain ul {
+  width: 30vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerMain ul li {
+  cursor: pointer;
+  font-size: 14px;
+  color: #858586;
+}
+header .headerMain button {
+  width: 6vw;
+  height: 5vh;
+  border: none;
+  border-radius: 4px;
+  background-color: #1B1B1E;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.headerBottom {
+  width: 99vw;
+  height: 80vh;
+  background-image: url(../assets/bgHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.headerBottom .bottomText {
+  width: 60vw;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.headerBottom .bottomText .textButtonNovo {
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.headerBottom .bottomText .textButtonNovo .textNovo {
+  height: 30vh;
+}
+.headerBottom .bottomText .textButtonNovo .textNovo h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #b6b6b8;
+}
+.headerBottom .bottomText .textButtonNovo .textNovo p {
+  width: 43vw;
+  font-size: 60px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.headerBottom .bottomText .textButtonNovo button {
+  width: 15vw;
+  height: 7vh;
+  background-color: #009661;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.aboutUs {
+  width: 99vw;
+  height: 50vh;
+  background-color: #141416;
+}
+.aboutUs .aboutMain {
+  width: 99vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aboutUs .aboutMain h4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #858586;
+}
+.aboutUs .aboutMain h2 {
+  width: 40vw;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+}/*# sourceMappingURL=mainSaler.module.css.map */

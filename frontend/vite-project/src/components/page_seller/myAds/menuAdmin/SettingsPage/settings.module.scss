@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.profileSection {
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+
+    .profileHeader {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .userInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            .userName {
+                font-size: 26px;
+                font-weight: 600;
+                color: #252525;
+            }
+
+            .logoutLink {
+                font-size: 14px;
+                font-weight: 600;
+                color: #009661;
+                cursor: pointer;
+            }
+        }
+
+        .settingsContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 30px;
+
+            .boxSettings {
+                width: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+
+                .boxClick {
+                    display: flex;
+                    flex-direction: column;
+
+                    .settingsStyle {
+                        width: 100%;
+                        height: 64px;
+                        background: #ffffff;
+                        border-bottom: 2px solid rgba($color: #8b959e, $alpha: 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 22px;
+                        cursor: pointer;
+
+                        h2 {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #2c2c2c;
+                        }
+
+                        span {
+                            font-size: 22px;
+                            color: #009661;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .boxContent {
+                        background: #ffffff;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.35s ease;
+                    }
+
+                    .open {
+                        max-height: 2000px;
+                    }
+
+                    .accountSettings {
+                        padding: 24px;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 40px;
+
+                        .currentEmailBlock {
+                            grid-column: span 2;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+
+                            .label {
+                                font-size: 13px;
+                                color: #6b7280;
+                            }
+
+                            .emailValue {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #009661;
+                            }
+                        }
+
+                        .sectionTitle {
+                            height: 30px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: #2c2c2c;
+                        }
+
+                        .inputGroup {
+                            height: 80px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+
+                            .inputLabel {
+                                font-size: 13px;
+                                color: #6b7280;
+                            }
+
+                            .input {
+                                height: 40px;
+                                border: 1px solid #d1d5db;
+                                border-radius: 4px;
+                                padding: 0 10px;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .buttonGroup {
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
+                        }
+                    }
+
+                    .contactInfo {
+                        height: 540px;
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .description {
+                            width: 40%;
+                            height: 45px;
+                            font-size: 14px;
+                            color: #252525;
+                        }
+
+                        .formGrid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 30px;
+
+                            .formColumn {
+                                display: flex;
+                                flex-direction: column;
+
+                                .formGroup {
+                                    height: 80px;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    flex-direction: column;
+
+                                    label {
+                                        font-size: 13px;
+                                        color: #6b7280;
+                                    }
+
+                                    input {
+                                        height: 40px;
+                                        border: 1px solid #d1d5db;
+                                        border-radius: 4px;
+                                        padding: 0 10px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .formActions {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .companyInfo {
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+
+                        .description {
+                            font-size: 14px;
+                            color: #6b7280;
+                        }
+
+                        .editor {
+                            width: 75%;
+                            border: 2px solid #e8e9e8;
+                            border-radius: 4px;
+                            .editorToolbar {
+                                display: flex;
+                                background: #ececec;
+                                gap: 6px;
+
+                                .toolbarButton {
+                                    width: 34px;
+                                    height: 30px;
+                                    border: none;
+                                    background: none;
+                                    cursor: pointer;
+                                    font-size: 13px;
+                                }
+
+                                strong,
+                                em,
+                                u {
+                                    font-family: 'Book Antiqua', serif;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                }
+                            }
+
+                            .editorArea {
+                                width: 100%;
+
+                                .editorTextarea {
+                                    width: 100%;
+                                    border: none;
+                                    resize: none;
+                                    padding: 10px;
+                                    font-size: 14px;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.saveButton {
+    height: 38px;
+    padding: 0 18px;
+    background: #009661;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.forgotButton {
+    background: none;
+    border: none;
+    color: #009661;
+    font-size: 13px;
+    cursor: pointer;
+}

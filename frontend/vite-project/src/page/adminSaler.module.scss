@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+.blackHeader {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #141416;
+
+    .headerMain {
+        width: 75%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #ffffff;
+            span {
+                color: #009661;
+            }
+        }
+
+        ul {
+            width: 50%;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                cursor: pointer;
+                font-size: 14px;
+                color: #858586;
+                transition: transform 0.3s ease;
+            }
+
+            li:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        button {
+            width: 6vw;
+            height: 5vh;
+            border: none;
+            border-radius: 4px;
+            background-color: #1b1b1e;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+}
+
+.headerBottom {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/bgHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .bottomText {
+        width: 75%;
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        .textButtonNovo {
+            width: 60vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .textNovo {
+                height: 30vh;
+                h4 {
+                    font-size: 24px;
+                    font-weight: 300;
+                    color: #b6b6b8;
+                }
+                p {
+                    width: 43vw;
+                    font-size: 60px;
+                    font-weight: 300;
+                    color: #ffffff;
+                }
+            }
+            button {
+                width: 15vw;
+                height: 7vh;
+                background-color: #009661;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.aboutUs {
+    width: 100%;
+    height: 800px;
+    background-color: #141416;
+    .aboutMain {
+        width: 100%;
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .textAboutMain {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4 {
+                font-size: clamp(12px, 2vw, 18px);
+                font-weight: 300;
+                color: #858586;
+            }
+            h2 {
+                width: 45vw;
+                text-align: center;
+                font-weight: 300;
+                font-size: clamp(18px, 4vw, 32px);
+                color: #fff;
+            }
+        }
+
+        .hoverBlock {
+            width: 75%;
+            height: 40vh;
+            display: flex;
+            justify-content: space-between;
+            .hoverCard {
+                width: 23%;
+                display: block;
+                height: auto;
+                transition: transform 0.8s ease;
+                cursor: pointer;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                p {
+                    width: 8vw;
+                    color: #ffffff;
+                    font-weight: 300;
+                    font-size: 16px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 10%;
+                    left: 12%;
+                }
+            }
+
+            .hoverCard:hover {
+                transform: translateY(40px);
+            }
+        }
+    }
+}
+
+.features {
+    width: 100%;
+    height: 80vh;
+    background-color: #1b1b1e;
+    .featuresRow {
+        width: 75%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 80px;
+        .featuresText {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p {
+                width: 12vw;
+                font-size: 24px;
+                color: #fff;
+            }
+
+            p:nth-child(1) {
+                position: relative;
+                top: 4vh;
+            }
+
+            p:nth-child(3) {
+                position: relative;
+                top: 4vh;
+            }
+        }
+        .floorCard {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .floor1 {
+                position: relative;
+                z-index: 2;
+                top: 35vh;
+                img {
+                    width: 45vw;
+                    height: auto;
+                }
+            }
+            .floor2 {
+                display: flex;
+                position: relative;
+                z-index: 1;
+                bottom: 12vh;
+                img {
+                    width: 35vw;
+                    height: auto;
+                }
+            }
+            .floor3 {
+                width: 87vw;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                z-index: 0;
+                bottom: 47vh;
+                img {
+                    width: 30vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.tariff {
+    width: 100%;
+    height: 1504px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141416;
+    color: white;
+    .tariffMain {
+        width: 75%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .tariffWrapper {
+            width: 90%;
+            height: 624px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                color: #858586;
+                font-size: 20px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                color: #fff;
+            }
+
+            .tariffContainer {
+                width: 100%;
+                height: 368px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+
+                .tariffItem {
+                    width: 100%;
+                    height: 368px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    transition: transform 0.3s ease;
+
+                    .tariffIconTitle {
+                        width: 100%;
+                        height: 210px;
+                    }
+
+                    .tariffTextIcon {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        img {
+                            width: auto;
+                            height: 40px;
+                        }
+                    }
+
+                    .tariffTextPrice {
+                        width: 100%;
+                        height: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        .tariffValue {
+                            font-size: 40px;
+                            color: #fff;
+                        }
+
+                        .tariffLimit {
+                            color: #009661;
+                        }
+                    }
+
+                    .tariffValue {
+                        font-size: 40px;
+                        color: #fff;
+                    }
+                }
+
+                .tariffItem:hover {
+                    cursor: pointer;
+                    background-color: #1b1b1e;
+                    border-radius: 8px;
+                    transform: translateY(10px);
+                }
+            }
+        }
+
+        .tariffCta {
+            width: 75%;
+            height: 403px;
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            img {
+                width: 200px;
+                height: 100%;
+                z-index: 1;
+                position: relative;
+            }
+
+            .tariffCtaContent {
+                width: 100%;
+                height: 303px;
+                z-index: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #1b1b1e;
+                position: relative;
+
+                .tariffCtaContentCenter {
+                    width: 80%;
+                    height: 230px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #858586;
+                    }
+
+                    button {
+                        width: 15vw;
+                        height: 7vh;
+                        background-color: #009661;
+                        color: #fff;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.startSelling {
+    width: 100%;
+    height: 2058px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1e;
+    .container {
+        width: 75%;
+        height: 1826px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        .steps {
+            width: 100%;
+            height: 1494px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .stepRight {
+                width: 100%;
+                height: 458px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+
+            .step {
+                width: 100%;
+                height: 458px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                position: relative;
+                left: 6rem;
+            }
+
+            .stepRight img,
+            .step img {
+                width: 815px;
+                height: 458px;
+            }
+
+            .stepContent {
+                height: 68px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p {
+                    font-size: 16px;
+                    color: #858586;
+                }
+
+                h4 {
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+        }
+
+        button {
+            width: 15vw;
+            height: 7vh;
+            background-color: #009661;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}

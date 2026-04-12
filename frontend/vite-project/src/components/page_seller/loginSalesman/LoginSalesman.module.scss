@@ -1,0 +1,100 @@
+.loginSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-family: 'Manrope', sans-serif;
+
+    .loginContainer {
+        width: 400px;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        h2 {
+            font-size: 24px;
+            color: #252525;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #8b959e;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            background-color: #ffe6e6;
+            color: #d8000c;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .formGroup {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                label {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    color: #252525;
+                }
+
+                input {
+                    height: 36px;
+                    padding: 5px 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 14px;
+
+                    &:focus {
+                        border-color: #009661;
+                        outline: none;
+                    }
+                }
+            }
+
+            button {
+                height: 40px;
+                background-color: #009661;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 10px;
+
+                &:disabled {
+                    background-color: #7fd0a2;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        .registerLink {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #8b959e;
+
+            a {
+                color: #009661;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

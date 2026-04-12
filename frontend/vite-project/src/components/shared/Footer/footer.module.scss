@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 318px;
+    background-color: #212026;
+    .footerMain {
+        width: 75%;
+        height: 318px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin: 0 auto;
+
+        .footerTop {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .textLogo {
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h2 {
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-size: 48px;
+                    color: #fff;
+                }
+
+                p {
+                    width: 80%;
+                    color: rgba(155, 155, 155, 0.6);
+                }
+            }
+            .textAbout {
+                width: 28%;
+                height: 69px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                h4 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(155, 155, 155, 0.6);
+                }
+                .textRow {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .socNetworks {
+                width: 14%;
+                height: 69px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 25%;
+                h4 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(155, 155, 155, 0.6);
+                }
+                .socNetIcon {
+                    width: 85%;
+                    height: 39px;
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            width: 100%;
+            height: 56px;
+            border: 2px solid rgba(155, 155, 155, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h3 {
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(155, 155, 155, 0.6);
+            }
+        }
+    }
+}
